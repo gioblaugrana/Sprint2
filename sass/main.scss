@@ -1,0 +1,133 @@
+$primary: #5265E1;
+$secondary: #FA5959;
+$light: white;
+$info: grey;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Merriweather:wght@700&family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
+
+
+body {
+    font-family: 'Plus Jakarta Sans' sans-serif;
+}
+
+.btn {
+    border-radius: 3px;
+}
+
+.btn-outline-secondary {
+    padding: 5px 30px;
+}
+
+.btn-outline-secondary {
+    background-color: $secondary;
+    border: 1px solid $dark;
+    color: $light;
+}
+
+.btn-outline-secondary:hover {
+    background-color: white;
+    border: 1px solid $secondary;
+    color: $secondary;
+}
+
+.btn-outline-info {
+    background-color: rgb(224, 226, 226);
+    border: 1px solid rgb(192, 192, 192);
+    color: $dark;
+}
+
+.btn-outline-info:hover {
+    background-color: $light;
+}
+
+.btn-primary:hover {
+    background-color: $light;
+    color: $primary;
+}
+
+.navbar {
+    padding: 32px 0;
+    font-weight: 600;
+}
+
+.nav-link {
+    margin-left: 41px;
+    color: $dark;
+}
+
+.nav-link:hover {
+    color: $secondary;
+}
+
+section.hero {
+    padding: 60px 0;
+}
+
+@include media-breakpoint-up(sm) {
+    .btn-outline-secondary {
+        margin-left: 25px;
+    }
+}
+
+
+section.hero .text {
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 50px;
+    color: $dark
+}
+
+section.hero p {
+    margin-top: 20px;
+}
+
+.forma {
+    width: 500px;
+    height: 200px;
+    -webkit-border-top-left-radius: 400px;
+    -webkit-border-bottom-left-radius: 400px;
+    -moz-border-radius-topleft: 400px;
+    -moz-border-radius-bottomleft: 400px;
+    border-top-left-radius: 400px;
+    border-bottom-left-radius: 400px;
+    background: $primary;
+}
+
+.forma {
+    margin-top: -200px;
+}
+
+@media (max-width: 991px) {
+    section.hero .text {
+        font-size: 30px;
+        color: $dark;
+        line-height: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    section.hero .text {
+        padding-top: 25px;
+        font-size: 40px;
+        text-align: center;
+        color: $dark;
+        line-height: 50px;
+    }
+
+    section.hero p {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 20px;
+    }
+    .buttons{
+        padding-top: 20px;
+        text-align: center;
+    }
+    .buttons .btn{
+        font-size: 20px;
+        font-weight: bold;
+        padding: 20px 40px;
+    }
+}
