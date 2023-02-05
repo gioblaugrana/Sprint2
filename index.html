@@ -10,26 +10,29 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md">
-        <div class="container">
-            <a class="navbar-brand" href="#"><img src="Imagenes/logo-bookmark.svg" alt="brand"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ms-auto">
-                    <a class="nav-link active" aria-current="page" </a>
-                        <a class="nav-link" href="#">FEATURES</a>
-                        <a class="nav-link" href="#">PRICING</a>
-                        <a class="nav-link me-5" href="#">CONTACT</a>
+    <header>
+        <nav class="navbar navbar-expand-md">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="Imagenes/logo-bookmark.svg" alt="brand"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link active" aria-current="page" </a>
+                            <a class="nav-link" href="#">FEATURES</a>
+                            <a class="nav-link" href="#">PRICING</a>
+                            <a class="nav-link me-5" href="#">CONTACT</a>
+                    </div>
+                    <button class="btn shadow-sm btn-sm btn-outline-secondary" type="button">LOGIN</button>
                 </div>
-                <button class="btn shadow-sm btn-sm btn-outline-secondary" type="button">LOGIN</button>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
     <section class="hero">
-        <div class="container">
+        <div class="container-lg">
             <div class="row">
                 <div class="col-md-6 order-2">
                     <div class="text">
@@ -50,88 +53,105 @@
             </div>
         </div>
     </section>
-    <div class="features-body">
-        <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
-            <li class="nav-item">
-                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#nav-home" role="tab"
-                    aria-controls="nav-home" aria-selected="true">Simple Bookmarking</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" id="searching-tab" data-toggle="tab" href="#nav-searching" role="tab"
-                    aria-controls="nav-seaching" aria-selected="false">Speedy Searching</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" id="sharing-tab" data-toggle="tab" href="#nav-sharing" role="tab"
-                    aria-controls="nav-sharing" aria-selected="false">Easy Sharing</a>
-            </li>
-        </ul>
-        <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                <div class="container-fluid features-tabs">
-                    <div class="row">
-                        <div class="col-6">
-                            <div class="tab-image">
-                                <img src="./Imagenes/illustration-features-tab-1.svg" class='image-fluid'
-                                    alt="Bookmark svg">
+    <section class="conatiner-fluid features-area">
+        <div class="features-header w-50 mx-auto text-center">
+            <h2 class="features-title">Features</h2>
+            <p class="features-para">Our aim is to make it quick and easy for you to access your favourite websites.
+                Your bookmarks sync between your devices so you can access them on the go.
+            </p>
+        </div>
+        <div class="features-body">
+            <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" role="tab"
+                        aria-controls="home" aria-selected="true">Simple Bookmarking</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#searching" role="tab"
+                        aria-controls="profile" aria-selected="false">Speedy Searching</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#sharing" role="tab"
+                        aria-controls="contact" aria-selected="false">Easy Sharing</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="container-fluid features-tabs">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="tab-image">
+                                    <img src="./Imagenes/illustration-features-tab-1.svg" class='w-100'
+                                        alt="Bookmark svg">
+                                    <div class="container-fluid forma2"> </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="tab-content">
-                                <h2 class="title-tab">Bookmark in one click</h2>
-                                <p class="para-tab">Organize your bookmarks however you like. Our simple drag-and-drop
-                                    interface gives you complete control over how you manage your favourite sites.</p>
-                                <button class="btn btn-info" data-tilt>More info</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="tab-pane fade" id="nav-searching" role="tabpanel" aria-labelledby="nav-searching-tab">
-                <div class="container-fluid features-tabs">
-                    <div class="row">
-                        <div class="col-6">
-                            <div class="tab-image">
-                                <img src="./Imagenes/illustration-features-tab-2.svg" class='image-fluid ml-5'
-                                    alt="Bookmark svg">
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="tab-content">
-                                <h2 class="title-tab">Intelligent search</h2>
-                                <p class="para-tab">Our powerful search feature will help you find saved sites in no
-                                    time at all. No need to trawl through all of your bookmarks.</p>
-                                <button class="btn btn-info" data-tilt>More info</button>
+                            <div class="col-md-6">
+                                <div class="tab-content">
+                                    <h2 class="title-tab">Bookmark in one click</h2>
+                                    <p class="para-tab">Organize your bookmarks however you like. Our simple
+                                        drag-and-drop
+                                        interface gives you complete control over how you manage your favourite sites.
+                                    </p>
+                                    <button class="btn btn-info" data-tilt>More info</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="tab-pane fade" id="nav-sharing" role="tabpanel" aria-labelledby="nav-sharing-tab">
-                <div class="container-fluid features-tabs">
-                    <div class="row">
-                        <div class="col-6">
-                            <div class="tab-image">
-                                <img src="./Imagenes/illustration-features-tab-3.svg" class="image-fluid"
-                                    alt="Bookmark svg">
+                <div class="tab-pane fade" id="searching" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="container-fluid features-tabs">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="tab-image">
+                                    <img src="./Imagenes/illustration-features-tab-2.svg" class='image-fluid'
+                                        alt="Bookmark svg">
+                                    <div class="container-fluid forma3"> </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="tab-content">
+                                    <h2 class="title-tab">Intelligent search</h2>
+                                    <p class="para-tab">Our powerful search feature will help you find saved sites in no
+                                        time at all. No need to trawl through all of your bookmarks.</p>
+                                    <button class="btn btn-info" data-tilt>More info</button>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-6">
-                            <div class="tab-content">
-                                <h2 class="title-tab">Share your bookmarks</h2>
-                                <p class="para-tab">Easily share your bookmarks and collections with others. Create a
-                                    shareable link that you can send at the click of a button.</p>
-                                <button class="btn btn-info" data-tilt>More info</button>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="sharing" role="tabpanel" aria-labelledby="contact-tab">
+                    <div class="container-fluid features-tabs">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="tab-image">
+                                    <img src="./Imagenes/illustration-features-tab-3.svg" class="image-fluid"
+                                        alt="Bookmark svg">
+                                    <div class="container-fluid forma4"> </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="tab-content">
+                                    <h2 class="title-tab">Share your bookmarks</h2>
+                                    <p class="para-tab">Easily share your bookmarks and collections with others. Create
+                                        a
+                                        shareable link that you can send at the click of a button.</p>
+                                    <button class="btn btn-info" data-tilt>More info</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     </section>
+    
 
 
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+                <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
 
 </body>
 

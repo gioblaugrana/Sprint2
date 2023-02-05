@@ -86,10 +86,6 @@ section.hero p {
 .forma {
     width: 500px;
     height: 200px;
-    -webkit-border-top-left-radius: 400px;
-    -webkit-border-bottom-left-radius: 400px;
-    -moz-border-radius-topleft: 400px;
-    -moz-border-radius-bottomleft: 400px;
     border-top-left-radius: 400px;
     border-bottom-left-radius: 400px;
     background: $primary;
@@ -97,30 +93,88 @@ section.hero p {
 
 .forma {
     margin-top: -200px;
+    margin-right: -5px;
 }
 
-@media (max-width: 991px) {
+
+.forma2 {
+    width: 600px;
+    height: 200px;
+    border-top-right-radius: 400px;
+    border-bottom-right-radius: 400px;
+    background: $primary;
+    box-sizing: border-box;
+}
+
+.forma2{
+    margin-top: -125px;
+    margin-left: -40px;
+}
+.forma3 {
+    width: 550px;
+    height: 200px;
+    border-top-right-radius: 400px;
+    border-bottom-right-radius: 400px;
+    background: $primary;
+    box-sizing: border-box;
+}
+
+.forma3{
+    margin-top: -125px;
+    margin-left: -40px;
+}
+.forma4 {
+    width: 550px;
+    height: 200px;
+    border-top-right-radius: 400px;
+    border-bottom-right-radius: 400px;
+    background: $primary;
+    box-sizing: border-box;
+}
+
+.forma4{
+    margin-top: -125px;
+    margin-left: -40px;
+}
+
+@media only screen and (max-width: 991px) {
     section.hero .text {
         font-size: 30px;
         color: $dark;
         line-height: 30px;
     }
 }
-
-@media (max-width: 767px) {
+@media only screen and (max-width: 914px){
+    .tab-content{
+        padding-left: 60px;
+    }
+}
+@media only screen and (max-width: 968px) {
+    .tab-content{
+      padding-right: -30px;
+    }
+    }
+    @media only screen and (max-width: 877px) {
+        .tab-content{
+          padding-top: auto;
+          padding-left: -80px;
+          padding-right: -70px;
+        }
+        }
+    
+@media only screen and (max-width: 767px) {
     section.hero .text {
         padding-top: 25px;
-        font-size: 40px;
+        font-size: 60px;
         text-align: center;
         color: $dark;
-        line-height: 50px;
+        line-height: 60px;
     }
-
-
+    
     section.hero p {
-        margin-top: 20px;
+        margin-top: 40px;
         text-align: center;
-        font-size: 20px;
+        font-size: 40px;
     }
 
     .buttons {
@@ -133,5 +187,58 @@ section.hero p {
         font-weight: bold;
         padding: 20px 40px;
     }
+    .nav-item {
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: 35px;
+        font-weight: bold;
+      }
+      .title-tab{
+        font-size: 40px;
+        font-weight: 800;
+      }
+      .tab-content{
+        padding-top: 20px;
+        text-align: center;
+        padding-right:70px;
+        font-size: 25px;
+      }
+      .features-title{
+        font-size: 50px;
+    }
+    .features-para{
+        font-size: 25px;
+        display: block;
+    }
+      }
+
+.section .features-title{
+    font-size: 80px;
 }
 
+.features-body{
+    padding-top: 30px;
+}
+.tab-content {
+    padding-top: 20px;
+    margin: 20px 0 20px 20px;
+}
+.title-tab{
+    padding-top: 30px;
+}
+
+.btn-info{
+    background-color: $primary;
+    color: $light;
+    border: solid 1px $primary;
+}
+.btn-info:hover {
+    background-color: $light;
+    color: $primary;
+    border: solid 1px $primary;
+}
+
+.features-body .nav-item :hover{
+border-bottom: $secondary;
+}
