@@ -11937,7 +11937,7 @@ section.hero p {
 
 .forma2 {
   margin-top: -125px;
-  margin-left: -40px;
+  margin-left: -30px;
 }
 
 .forma3 {
@@ -11983,6 +11983,10 @@ section.hero p {
 @media only screen and (max-width: 968px) {
   .tab-content {
     padding-right: -30px;
+  }
+  .forma2 {
+    height: 200px;
+    width: 400px;
   }
 }
 @media only screen and (max-width: 877px) {
@@ -12038,6 +12042,19 @@ section.hero p {
     font-size: 25px;
     display: block;
   }
+  #ch {
+    margin-left: 130px;
+  }
+  #fire {
+    margin-left: 130px;
+  }
+  #ope {
+    margin-left: 130px;
+    margin-top: -60px;
+  }
+  .card-body {
+    text-align: center;
+  }
 }
 .section .features-title {
   font-size: 80px;
@@ -12045,11 +12062,6 @@ section.hero p {
 
 .features-body {
   padding-top: 30px;
-}
-
-.tab-content {
-  padding-top: 20px;
-  margin: 20px 0 20px 20px;
 }
 
 .title-tab {
@@ -12070,4 +12082,29 @@ section.hero p {
 
 .features-body .nav-item :hover {
   border-bottom: #FA5959;
+}
+
+.shadow-border {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 5px #ddd;
+}
+
+.downloads-area {
+  position: relative;
+  margin-top: 70px;
+  height: 40vh;
+  text-align: center;
+}
+
+.downloads-area .header-para {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#fire {
+  padding-top: 20px;
+}
+
+#ope {
+  padding-top: 80px;
 }/*# sourceMappingURL=main.css.map */

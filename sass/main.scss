@@ -106,10 +106,11 @@ section.hero p {
     box-sizing: border-box;
 }
 
-.forma2{
+.forma2 {
     margin-top: -125px;
-    margin-left: -40px;
+    margin-left: -30px;
 }
+
 .forma3 {
     width: 550px;
     height: 200px;
@@ -119,10 +120,11 @@ section.hero p {
     box-sizing: border-box;
 }
 
-.forma3{
+.forma3 {
     margin-top: -125px;
     margin-left: -40px;
 }
+
 .forma4 {
     width: 550px;
     height: 200px;
@@ -132,7 +134,7 @@ section.hero p {
     box-sizing: border-box;
 }
 
-.forma4{
+.forma4 {
     margin-top: -125px;
     margin-left: -40px;
 }
@@ -144,24 +146,33 @@ section.hero p {
         line-height: 30px;
     }
 }
-@media only screen and (max-width: 914px){
-    .tab-content{
+
+@media only screen and (max-width: 914px) {
+    .tab-content {
         padding-left: 60px;
     }
 }
+
 @media only screen and (max-width: 968px) {
-    .tab-content{
-      padding-right: -30px;
+    .tab-content {
+        padding-right: -30px;
     }
+
+    .forma2 {
+        height: 200px;
+        width: 400px;
+
     }
-    @media only screen and (max-width: 877px) {
-        .tab-content{
-          padding-top: auto;
-          padding-left: -80px;
-          padding-right: -70px;
-        }
-        }
-    
+}
+
+@media only screen and (max-width: 877px) {
+    .tab-content {
+        padding-top: auto;
+        padding-left: -80px;
+        padding-right: -70px;
+    }
+}
+
 @media only screen and (max-width: 767px) {
     section.hero .text {
         padding-top: 25px;
@@ -170,7 +181,7 @@ section.hero p {
         color: $dark;
         line-height: 60px;
     }
-    
+
     section.hero p {
         margin-top: 40px;
         text-align: center;
@@ -187,58 +198,97 @@ section.hero p {
         font-weight: bold;
         padding: 20px 40px;
     }
+
     .nav-item {
         display: block;
         width: 100%;
         text-align: center;
         font-size: 35px;
         font-weight: bold;
-      }
-      .title-tab{
+    }
+
+    .title-tab {
         font-size: 40px;
         font-weight: 800;
-      }
-      .tab-content{
+    }
+
+    .tab-content {
         padding-top: 20px;
         text-align: center;
-        padding-right:70px;
+        padding-right: 70px;
         font-size: 25px;
-      }
-      .features-title{
+    }
+
+    .features-title {
         font-size: 50px;
     }
-    .features-para{
+
+    .features-para {
         font-size: 25px;
         display: block;
     }
-      }
+    #ch{
+        margin-left: 130px;
+    }
+    #fire{
+        margin-left: 130px;
+    }
+    #ope{
+        margin-left: 130px;
+        margin-top: -60px;
+    }
+    .card-body{
+        text-align: center;
+    }
+}
 
-.section .features-title{
+.section .features-title {
     font-size: 80px;
 }
 
-.features-body{
-    padding-top: 30px;
-}
-.tab-content {
-    padding-top: 20px;
-    margin: 20px 0 20px 20px;
-}
-.title-tab{
+.features-body {
     padding-top: 30px;
 }
 
-.btn-info{
+.title-tab {
+    padding-top: 30px;
+}
+
+
+.btn-info {
     background-color: $primary;
     color: $light;
     border: solid 1px $primary;
 }
+
 .btn-info:hover {
     background-color: $light;
     color: $primary;
     border: solid 1px $primary;
 }
 
-.features-body .nav-item :hover{
-border-bottom: $secondary;
+.features-body .nav-item :hover {
+    border-bottom: $secondary;
+}
+
+.shadow-border {
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px #ddd;
+}
+
+.downloads-area {
+    position: relative;
+    margin-top: 70px;
+    height: 40vh;
+    text-align: center;
+}
+.downloads-area .header-para{
+    margin-top: 20px;
+    text-align: center;
+}
+#fire{
+    padding-top: 20px;
+}
+#ope{
+    padding-top: 80px;
 }
