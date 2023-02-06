@@ -368,7 +368,7 @@ ul {
     padding-top: 16px;
   }
   
-  .footer-area .footer-social-media .img {
+  .footer-social-media .img {
     color: $light;
   }
   
@@ -382,3 +382,8 @@ ul {
     .footer-social-media ul li {
         margin-right: 20px;
       }
+
+      .footer-area .footer-social-media ul li :hover{
+        background-color:  $secondary;
+        color: $secondary;
+        }
