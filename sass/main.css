@@ -12056,7 +12056,7 @@ section.hero p {
   }
   #ope {
     margin-left: 130px;
-    margin-top: -60px;
+    margin-top: -130px;
   }
   .card-body {
     text-align: center;
@@ -12111,14 +12111,6 @@ section.hero p {
 .downloads-area .header-para {
   margin-top: 20px;
   text-align: center;
-}
-
-#fire {
-  padding-top: 20px;
-}
-
-#ope {
-  padding-top: 80px;
 }
 
 .accordion {
@@ -12210,4 +12202,19 @@ ul {
 .footer-area .footer-social-media ul li :hover {
   background-color: #FA5959;
   color: #FA5959;
+}
+
+.downloads-area .row div:nth-child(1) {
+  order: 1;
+  padding-top: 50px;
+}
+
+.downloads-area .row div:nth-child(2) {
+  order: 2;
+  padding-top: 50px;
+}
+
+.downloads-area .row div:nth-child(3) {
+  order: 3;
+  padding-top: 180px;
 }/*# sourceMappingURL=main.css.map */
