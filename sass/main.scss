@@ -2,6 +2,8 @@ $primary: #5265E1;
 $secondary: #FA5959;
 $light: white;
 $info: grey;
+$accordion-border-color: $light;
+
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import url('https://fonts.googleapis.com/css2?family=Lora&family=Merriweather:wght@700&family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
@@ -240,6 +242,9 @@ section.hero p {
     .card-body{
         text-align: center;
     }
+    .box-header{
+        text-align: center;
+    }
 }
 
 .section .features-title {
@@ -279,7 +284,6 @@ section.hero p {
 .downloads-area {
     position: relative;
     margin-top: 70px;
-    height: 40vh;
     text-align: center;
 }
 .downloads-area .header-para{
@@ -292,3 +296,21 @@ section.hero p {
 #ope{
     padding-top: 80px;
 }
+.accordion{
+    text-align: left;
+}
+
+.accordion-button:hover{
+    color: $secondary;
+}
+
+.questions-area{
+    margin-top: 80px;
+}
+
+#last{
+    margin-top: 30px;
+}
+.accordion-button:focus {
+    border-color: $light;
+    }

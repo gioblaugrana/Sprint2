@@ -4528,7 +4528,7 @@ textarea.form-control-lg {
   --bs-accordion-color: var(--bs-body-color);
   --bs-accordion-bg: var(--bs-body-bg);
   --bs-accordion-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
-  --bs-accordion-border-color: var(--bs-border-color);
+  --bs-accordion-border-color: white;
   --bs-accordion-border-width: var(--bs-border-width);
   --bs-accordion-border-radius: var(--bs-border-radius);
   --bs-accordion-inner-border-radius: calc(var(--bs-border-radius) - (var(--bs-border-width)));
@@ -12055,6 +12055,9 @@ section.hero p {
   .card-body {
     text-align: center;
   }
+  .box-header {
+    text-align: center;
+  }
 }
 .section .features-title {
   font-size: 80px;
@@ -12092,7 +12095,6 @@ section.hero p {
 .downloads-area {
   position: relative;
   margin-top: 70px;
-  height: 40vh;
   text-align: center;
 }
 
@@ -12107,4 +12109,24 @@ section.hero p {
 
 #ope {
   padding-top: 80px;
+}
+
+.accordion {
+  text-align: left;
+}
+
+.accordion-button:hover {
+  color: #FA5959;
+}
+
+.questions-area {
+  margin-top: 80px;
+}
+
+#last {
+  margin-top: 30px;
+}
+
+.accordion-button:focus {
+  border-color: white;
 }/*# sourceMappingURL=main.css.map */
