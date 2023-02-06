@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <div class="conatiner-fluid">
     <header>
         <nav class="navbar navbar-expand-md">
             <div class="container">
@@ -158,7 +159,7 @@
             </p>
         </div>
         <div class="row container mx-auto">
-            <div class="col-md-4 col-xxl-12"  id="ch">
+            <div class="col-md-4 col-xxl-12" id="ch">
                 <div class="card shadow-border text-center" style="width: 18rem;">
                     <img src="Imagenes/logo-chrome.svg" class="card-img-top" alt="chrome svg">
                     <div class="card-body">
@@ -193,62 +194,129 @@
             </div>
         </div>
     </section>
-    <section class="container-fluid text-center questions-area">
-        <div class="col-12">
-            <div class="box-header">
-                <h2>Frequently Asked Questions</h2>
-                <p>Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us.</p>
+    <div class="container">
+        <section class="container-fluid text-center questions-area">
+            <div class="col-12">
+                <div class="box-header">
+                    <h2>Frequently Asked Questions</h2>
+                    <p>Here are some of our FAQs. If you have any other questions you’d like answered please feel free
+                        to
+                        email us.</p>
+                </div>
+            </div>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item w-50 mx-auto">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            <b>What is Bookmark?</b>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut iste
+                            veniam
+                            accusantium saepe illo. Ullam, tempora, reiciendis, accusantium temporibus soluta eligendi
+                            fuga
+                            deserunt labore nobis aspernatur nesciunt eum dolores vitae?</div>
+                    </div>
+                </div>
+                <div class="accordion-item w-50 mx-auto">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            <b>How can I request a new browser?</b>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+                            quibusdam sit commodi minus quam sint eius, nam enim dolor architecto doloribus! Maxime
+                            consequuntur dolor optio eaque dignissimos. Doloremque, ab laboriosam.</div>
+                    </div>
+                </div>
+                <div class="accordion-item w-50 mx-auto">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            <b>Is there a mobile app?</b>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat
+                            at
+                            recusandae eos ex ea, iure aliquam eius consequuntur ratione labore quo, alias aut doloribus
+                            iste, adipisci dolore velit blanditiis nihil.</div>
+                    </div>
+                </div>
+                <div class="accordion-item w-50 mx-auto">
+                    <h2 class="accordion-header" id="flush-headingfour">
+                        <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseFour" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            <b>What about other Chromium browsers?</b>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+                            veniam
+                            deserunt vel consectetur ex inventore unde quibusdam neque, eveniet quos. Ullam nesciunt
+                            illum
+                            consectetur! Suscipit aliquid cupiditate amet quasi hic..</div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn btn-primary " id="last">More info</a>
+        </section>
+        <div class="container-fluid subscribe-area">
+            <div class="col-12 subscribe-content">
+                <span>35.000 + ALREADY JOINED</span>
+                <h2>Stay up-to-date with what we're doing</h2>
+                <form class="row g-3 needs-validation" novalidate>
+                    <div class="col-md-6 position-relative">
+                        <input type="email" class="form-control" id="validationCustom01"
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                        <div class="invalid-tooltip">
+                            Whoops make sure it´s is an email.
+                        </div>
+                    </div>
+                    <div class="col-md-6 position-relative">
+                        <button class="btn btn-danger" type="submit">Contact Us</button>
+                    </div>
+                </form>
             </div>
         </div>
-        <div class="accordion accordion-flush" id="accordionFlushExample">
-            <div class="accordion-item w-50 mx-auto">
-              <h2 class="accordion-header" id="flush-headingOne">
-                <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                    <b>What is Bookmark?</b>
-                </button>
-              </h2>
-              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut iste veniam accusantium saepe illo. Ullam, tempora, reiciendis, accusantium temporibus soluta eligendi fuga deserunt labore nobis aspernatur nesciunt eum dolores vitae?</div>
-              </div>
+    </div>
+    <footer class="container-fluid footer-area">
+        <div class="footer-content d-flex align-items-center">
+            <div class="footer-logo mr-4">
+                <img src="./Imagenes/logo-bookmark - copia.svg" alt="Bookmark Logo" class="image-fluid align-self-start">
             </div>
-            <div class="accordion-item w-50 mx-auto">
-              <h2 class="accordion-header" id="flush-headingTwo">
-                <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                    <b>How can I request a new browser?</b>
-                </button>
-              </h2>
-              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quibusdam sit commodi minus quam sint eius, nam enim dolor architecto doloribus! Maxime consequuntur dolor optio eaque dignissimos. Doloremque, ab laboriosam.</div>
-              </div>
+            <div class="footer-links flex-grow-1 align-items-center">
+                <ul class="d-flex align-items-baseline">
+                    <li class=" links-item "><a href="# ">Features</a></li>
+                    <li class="links-item ml-4 "><a href="# ">Pricing</a></li>
+                    <li class="links-item ml-4 "><a href="# ">Contact</a></li>
+                </ul>
             </div>
-            <div class="accordion-item w-50 mx-auto">
-              <h2 class="accordion-header" id="flush-headingThree">
-                <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                    <b>Is there a mobile app?</b>
-                </button>
-              </h2>
-              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat at recusandae eos ex ea, iure aliquam eius consequuntur ratione labore quo, alias aut doloribus iste, adipisci dolore velit blanditiis nihil.</div>
-              </div>
+            <div class="footer-social-media ">
+                <ul class="d-flex align-items-center ">
+                    <li  class="mr-5 ">
+                        <img src="./imagenes/icon-facebook.svg " alt="Facebook icon " id="fb">
+                    </li>
+                    <li class="mr-5 ">
+                        <img src="./Imagenes/icon-twitter.svg " alt="twitter icon ">
+                    </li>
+                </ul>
             </div>
-            <div class="accordion-item w-50 mx-auto">
-                <h2 class="accordion-header" id="flush-headingfour">
-                  <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseThree">
-                    <b>What about other Chromium browsers?</b>
-                  </button>
-                </h2>
-                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta veniam deserunt vel consectetur ex inventore unde quibusdam neque, eveniet quos. Ullam nesciunt illum consectetur! Suscipit aliquid cupiditate amet quasi hic..</div>
-                </div>
-              </div>
-          </div>
-          <a href="#" class="btn btn-primary " id="last">More info</a>
-    </section>
-
-
-
+        </div>
+    </footer>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
+    <script src="scripts.js"></script>
+</div>
 
 </body>
 

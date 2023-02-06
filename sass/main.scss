@@ -2,13 +2,17 @@ $primary: #5265E1;
 $secondary: #FA5959;
 $light: white;
 $info: grey;
-$accordion-border-color: $light;
+
 
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import url('https://fonts.googleapis.com/css2?family=Lora&family=Merriweather:wght@700&family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
 
-
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 body {
     font-family: 'Plus Jakarta Sans' sans-serif;
 }
@@ -32,6 +36,7 @@ body {
     border: 1px solid $secondary;
     color: $secondary;
 }
+
 
 .btn-outline-info {
     background-color: rgb(224, 226, 226);
@@ -245,7 +250,11 @@ section.hero p {
     .box-header{
         text-align: center;
     }
-}
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
 
 .section .features-title {
     font-size: 80px;
@@ -314,3 +323,62 @@ section.hero p {
 .accordion-button:focus {
     border-color: $light;
     }
+.btn-danger:hover{
+    background-color: $light;
+    color: $secondary;
+}    
+.subscribe-area {
+   background-color: $primary;
+   margin-top: 70px;
+}
+
+.subscribe-content{
+    text-align: center;
+    padding-top: 50px;
+    color: $light;
+    padding-bottom: 30px;
+}
+.needs-validation{
+    margin-top: 20px;
+}
+ul {
+    list-style-type: none;
+  }
+.footer-area {
+    height: 22vh;
+    background: #252b46; 
+    padding: 2rem;
+  }
+  
+  .footer-area .footer-links ul > .links-item > a {
+    font-family:sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-transform: uppercase;
+    color: $light;
+    transition: color 200ms ease-in-out;
+    text-decoration: none;
+  }
+  
+  .footer-area .footer-links ul > .links-item > a:hover {
+    color: $secondary;
+  }
+  .footer-area .footer-links{
+    padding-top: 16px;
+  }
+  
+  .footer-area .footer-social-media .img {
+    color: $light;
+  }
+  
+.links-item + .links-item {
+    margin-left: 2rem;
+  }
+
+   .footer-social-media ul {
+      margin: 0px 20px 0 20px;
+    }
+    .footer-social-media ul li {
+        margin-right: 20px;
+      }
